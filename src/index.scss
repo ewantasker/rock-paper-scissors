@@ -1,0 +1,18 @@
+// 1. Override Bulma variables before importing
+$primary: #5e60ce;
+$sidebar-width: 220px;
+
+// 2. Import only what you need (optional)
+// Or just import all of Bulma:
+@use "bulma";
+
+// 3. Your custom styles
+.sidebar {
+  width: $sidebar-width;
+  transition: width 0.3s ease;
+  overflow: hidden;
+
+  &.is-narrow {
+    width: 60px;
+  }
+}
