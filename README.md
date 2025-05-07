@@ -9,7 +9,7 @@ It is designed for user to make quick decisions and challenge again the computer
 - Statistics tracking
 - Able to get guidelines/rules on how the game works
 
-Tech stack that has been built
+## Tech Stack
 - React
 - TypeScript
 - Bulma CSS
