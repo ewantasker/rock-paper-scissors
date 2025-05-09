@@ -1,5 +1,10 @@
 
-@use "../styles/buttons.scss" as *;
+@use "../styles/buttons.scss" as button;
+@use "../styles/variables.scss" as vars;
+
+.layout-container{
+  min-height: vars.$sidebar-min-height;
+}
 
 .layout-sidebar {
   transition: width 0.3s ease;
@@ -28,11 +33,19 @@
   color: black;
 }
 
+.menu-list {
+  list-style: none;
+  padding: 0;
+  font-size: 30px;
+  color: black;
+}
+
 .collapse-btn {
+  display: flex;
+  justify-content: center;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
 }
 
 .icon {
@@ -40,27 +53,41 @@
   width: 50px;
   color: #363636;
   font-size: 50px;
-}
 
-.sidebar-btn{
   &:hover{
-    background-color: $sidebarbtnColor;
+    background-color: button.$sidebarbtnColor;
   }
 }
 
-.expanded-sidebar-btn{
-
+.label-btn{
+  &:hover{
+    background-color: button.$sidebarbtnColor;
+  }
 }
 
-.collapsed-sidebar-btn{
-
+.sidebar-btn{
+  padding: 10px;
+  &:hover{
+    background-color: button.$sidebarbtnColor;
+  }
 }
 
-.menu-list {
-  font-size: 30px;
-  color: black;
+.collapsed-sidebar-btn {
+  text-align: center;
+}
+
+.expanded-sidebar-btn {
+  padding-left: 1rem;
 }
 
 .collapsed-menu {
   color: black;
+}
+
+.layout-sidebar {
+  transition: width 0.3s ease;
+}
+
+.collapsed {
+  width: 4rem; // or whatever width you want for collapsed state
 }

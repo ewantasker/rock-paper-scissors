@@ -10,11 +10,11 @@ import {
 } from "@heroicons/react/24/outline";
 import "./layout.scss";
 
-const Layout: React.FC = () => {
-  const [collapsed, setCollapsed] = useState(false);
+const Layout = () => {
+  const [collapsed, setCollapsed] = useState<boolean>(false);
 
   return (
-    <div className="columns is-gapless" style={{ minHeight: "100vh" }} >
+    <div className="columns is-gapless layout-container">
       <aside className={`layout-sidebar ${collapsed ? "collapsed" : ""}`}>
         <div className="sidebar-header">
           {!collapsed && <h1 className="menu-header">Menu</h1>}
@@ -28,30 +28,30 @@ const Layout: React.FC = () => {
         </div>
 
         <ul className={`${collapsed ? "collapsed-menu" : "menu-list"}`}>
-          <li className="sidebar-btn">
+          <li className="">
             <Link to="/" className={`${collapsed ? "collapsed-sidebar-btn" : "expanded-sidebar-btn"}`}>
-              {collapsed ? <HomeIcon className="icon" /> : "Home"}
+              {collapsed ? <HomeIcon className="icon" /> : <span className="label-btn">Home</span>}
             </Link>
           </li>
-          <li className="sidebar-btn">
+          <li className="">
             <Link to="/duel" className={`${collapsed ? "collapsed-sidebar-btn" : "expanded-sidebar-btn"}`}>
-              {collapsed ? <PlayIcon className="icon" /> : "Let's Duel"}
+              {collapsed ? <PlayIcon className="icon" /> : <span className="label-btn">Let's Duel</span>}
             </Link>
           </li>
-          <li className="sidebar-btn">
+          <li className="">
             <Link to="/statistics" className={`${collapsed ? "collapsed-sidebar-btn" : "expanded-sidebar-btn"}`}>
-              {collapsed ? <ChartBarIcon className="icon" /> : "Statistics"}
+              {collapsed ? <ChartBarIcon className="icon" /> : <span className="label-btn">Statistics</span>}
             </Link>
           </li>
-          <li className="sidebar-btn">
+          <li className="">
             <Link to="/help" className={`${collapsed ? "collapsed-sidebar-btn" : "expanded-sidebar-btn"}`}>
-              {collapsed ? <QuestionMarkCircleIcon className="icon" /> : "Need Help?"}
+              {collapsed ? <QuestionMarkCircleIcon className="icon" /> : <span className="label-btn">Need Help?</span>}
             </Link>
           </li>
         </ul>
       </aside>
 
-      <div className="column is-flex is-10 p-5">
+      <div className="column is-10 p-5">
         <Outlet />
       </div>
     </div>
