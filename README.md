@@ -1,5 +1,7 @@
 # Rock, Paper, Scissors
 
+## Description
+
 This is a classic Rock, Paper, Scissors game.
 It is designed for user to make quick decisions and challenge again the computer.
 
@@ -10,6 +12,7 @@ It is designed for user to make quick decisions and challenge again the computer
 - Able to get guidelines/rules on how the game works
 
 ## Tech Stack
+
 - React
 - TypeScript
 - Bulma CSS
