@@ -1,4 +1,4 @@
-@use '../styles/variables' as modal;
+@use "../../styles/variables.scss" as modal;
 
 .modal-overlay {
   position: fixed;
@@ -34,11 +34,14 @@
 
 .modal-card .modal-card-body {
   background-color: white;
-  color: black;
+  color: modal.$font-black;
+
+  .title {
+    color: modal.$font-black;
+  }
 }
 
 .modal-card .modal-card-foot {
   background-color: white;
   justify-content: flex-end;
 }
-

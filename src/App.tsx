@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/home-screen/Home';
-import Duel from './pages/duel-screen/Duel';
-import Statistics from './pages/statistics-screen/Statistics';
-import Help from './pages/support-screen/Help';
-import Layout from './components/Layout';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home-screen/Home";
+import Duel from "./pages/duel-screen/Duel";
+import Statistics from "./pages/statistics-screen/Statistics";
+import Help from "./pages/support-screen/Help";
+import Layout from "./components/sidebar/Layout";
 
 const App = () => {
   return (

@@ -16,12 +16,18 @@ const Modal = ({ isOpen, title, children, onClose }: ModalProps) => {
         {title && (
           <header className="modal-card-head">
             <p className="modal-card-title">{title}</p>
-            <button className="delete" aria-label="close" onClick={onClose}></button>
+            <button
+              className="delete"
+              aria-label="close"
+              onClick={onClose}
+            ></button>
           </header>
         )}
         <section className="modal-card-body">{children}</section>
         <footer className="modal-card-foot">
-          <button className="button" onClick={onClose}>Close</button>
+          <button className="button" onClick={onClose}>
+            Close
+          </button>
         </footer>
       </div>
     </div>

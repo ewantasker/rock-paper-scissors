@@ -1,27 +1,35 @@
 import {
-  PieChart, Pie, Cell,
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend
-} from 'recharts';
+  PieChart,
+  Pie,
+  Cell,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+} from "recharts";
 
 const pieData = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
+  { name: "Group A", value: 400 },
+  { name: "Group B", value: 300 },
+  { name: "Group C", value: 300 },
+  { name: "Group D", value: 200 },
 ];
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 const barData = [
-  { name: 'Page A', uv: 4000, pv: 2400 },
-  { name: 'Page B', uv: 3000, pv: 1398 },
-  { name: 'Page C', uv: 2000, pv: 9800 },
-  { name: 'Page D', uv: 2780, pv: 3908 },
+  { name: "Page A", uv: 4000, pv: 2400 },
+  { name: "Page B", uv: 3000, pv: 1398 },
+  { name: "Page C", uv: 2000, pv: 9800 },
+  { name: "Page D", uv: 2780, pv: 3908 },
 ];
 
 const Charts = () => {
   return (
-    <div style={{ padding: '2rem' }}>
+    <div style={{ padding: "2rem" }}>
       <h2>Pie Chart</h2>
       <PieChart width={400} height={300}>
         <Pie

@@ -1,8 +1,7 @@
+@use "../../styles/buttons.scss" as button;
+@use "../../styles/variables.scss" as vars;
 
-@use "../styles/buttons.scss" as button;
-@use "../styles/variables.scss" as vars;
-
-.layout-container{
+.layout-container {
   min-height: vars.$sidebar-min-height;
 }
 
@@ -54,20 +53,20 @@
   color: #363636;
   font-size: 50px;
 
-  &:hover{
+  &:hover {
     background-color: button.$sidebarbtnColor;
   }
 }
 
-.label-btn{
-  &:hover{
+.label-btn {
+  &:hover {
     background-color: button.$sidebarbtnColor;
   }
 }
 
-.sidebar-btn{
+.sidebar-btn {
   padding: 10px;
-  &:hover{
+  &:hover {
     background-color: button.$sidebarbtnColor;
   }
 }

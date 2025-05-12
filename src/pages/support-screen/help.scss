@@ -5,15 +5,18 @@
   padding: 2rem;
 }
 
-
-.help-btn{
+.help-btn {
   background-color: coral;
 
   height: 300px;
   font-size: 24px;
   color: black;
 
-  &:hover{
+  &:hover {
     background-color: chocolate;
   }
+}
+
+.text-bold {
+  font-weight: 700;
 }
