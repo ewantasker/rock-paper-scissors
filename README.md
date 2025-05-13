@@ -1,7 +1,6 @@
 # Rock, Paper, Scissors
 
 ## Description
-
 This is a classic Rock, Paper, Scissors game.
 It is designed for user to make quick decisions and challenge again the computer.
 
@@ -17,3 +16,7 @@ It is designed for user to make quick decisions and challenge again the computer
 - TypeScript
 - Bulma CSS
 - Webpack
+
+
+## Live Demo
+[rock-paper-scissors](https://rock-paper-scissors-six-lovat.vercel.app/)
