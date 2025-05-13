@@ -17,7 +17,7 @@ export default function Home() {
           V)
         </li>
       </ul>
-      <p>
+      <p className="description">
         It's often used as a quick decision-making game, similar to flipping a
         coin.
       </p>
