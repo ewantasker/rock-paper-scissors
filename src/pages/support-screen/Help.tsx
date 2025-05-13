@@ -29,7 +29,7 @@ export default function Help() {
           </li>
           <div>
             <p>
-              <span className="text-bold">See Who Wins:</span>The winner is
+              <span className="text-bold">See Who Wins:</span> The winner is
               decided based on these rules:
             </p>
             - Rock crushes Scissors - Scissors cuts Paper - Paper covers Rock
