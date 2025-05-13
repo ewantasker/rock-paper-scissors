@@ -23,3 +23,5 @@ yarn-error.log*
 
 # build tools cache
 .cache/
+
+/build
